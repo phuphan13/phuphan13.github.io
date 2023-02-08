@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/pp.png" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+                
+					<header id="header">
+						<a href="index.html"></a>
+					</header>
+           
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="aboutme.html">About Me</a></li>
+							<li><a href="resume.html">My Resume</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/phu-phan-02665b209/" target="_blank"  class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/phuphan13" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" >
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major" >
+									<h2>Hi there!<br /></h2>
+									<p>My name is Phu and I am really excited to welcome you to my portfolio website
+									</p>
+								</header>
+								<div class="image main"><img src="./assets/images/avatar/avatar2.jpg" alt="" /></div>
+								<p>The assistant federal minister responsible for charities, Zed Seselja, said the Mint's donation dollar was a "long-term idea" to remind Australians to donate if they were able to.
+
+									"This year we know there are many Australians doing it tough in the face of the COVID-19 pandemic, and Australia's 57,000 charities and not-for-profits have not been immune to these economic challenges," he said.</p>
+								<p>The world-first initiative is backed by research that found most Australians — 57 per cent — said they would be likely to donate the coin if they found it in their change.
+
+									Mr MacDiarmid said the aim was to promote charity, even if that meant simply thinking about giving.
+									
+									"What we are trying to do here is get people to stop and reflect," he said.
+									
+									"If they did just that alone and thought about the idea of donating … that in itself would be an amazing outcome.</p>
+									
+								<p class="mainp">Get in touch with me!</p>
+								<form method="post" action="https://formspree.io/f/mknaoaep" id="my-form">
+										<div class="fields">
+											<div class="field">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="3"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><p id="my-form-status"></p></li>
+										</ul>
+										
+									</form>
+			
+							</section>
+					</div>
+					<div id="copyright">
+						<ul><li></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+			<script>
+				var form = document.getElementById("my-form");
+				
+				async function handleSubmit(event) {
+				  event.preventDefault();
+				  var status = document.getElementById("my-form-status");
+				  var data = new FormData(event.target);
+				  fetch(event.target.action, {
+					method: form.method,
+					body: data,
+					headers: {
+						'Accept': 'application/json'
+					}
+				  }).then(response => {
+					if (response.ok) {
+					  status.innerHTML = "Thanks for your submission!";
+					  form.reset()
+					} else {
+					  response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+						  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+						} else {
+						  status.innerHTML = "Oops! There was a problem submitting your form"
+						}
+					  })
+					}
+				  }).catch(error => {
+					status.innerHTML = "Oops! There was a problem submitting your form"
+				  });
+				}
+				form.addEventListener("submit", handleSubmit)
+			</script>
+
+	</body>
+</html>

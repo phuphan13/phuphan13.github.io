@@ -78,14 +78,41 @@
 								 <a href="../assets/images/projects/project2/prj2-neo4j-graph.png" class="image main"><img src="../assets/images/projects/project2/prj2-neo4j-graph.png" alt="" /></a><p></p>
 								 <h3>4. Neo4j Graph Data Science Library (GDSL)</h3>
 								 <p>
-									The <a href="https://neo4j.com/docs/graph-data-science/2.3/algorithms/>">Neo4j GDSL</a>
+									The <a href="https://neo4j.com/docs/graph-data-science/2.3/algorithms/>">Neo4j GDS</a> libraries
 									support a wide ranges of data analytics, machine learning, graph algorithms etc. to improve prediction and discover insights.  
 								 </p>
 								 <p>
-									In this project, the restaurant owner
+									In this project, the restaurant owner plans to prioritize and focus more on their registered Customers
+									to maximize their personal experiences at the restaurant, then end up with engaging more. One strategy is 
+									to discover groups of customers who might have similar purchase references as it is beneficial for 
+									cross-selling opportunities to increase sales and customer loyalty. One technique is used to compute
+									pair-wise similarity between customers based on <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard coefficient</a>.
+								 </p>
+								 <h4>Example of Jaccard similarity by food items</h4>
+								 <a href="../assets/images/projects/project2/prj2-custsim1.png" class="image main"><img src="../assets/images/projects/project2/prj2-custsim1.png" alt="" /></a><p></p>
+								 <a href="../assets/images/projects/project2/prj2-custsim2.png" class="image main"><img src="../assets/images/projects/project2/prj2-custsim2.png" alt="" /></a><p></p>
+								 <p>
+									The Jaccard coefficient for each pair of customers is fairly low around 25% or less indicating
+									 that these customers do not have very strong similarity in purchasing food item. This might be due 
+									 to less transaction sales data in during last period. However, the graph still shows some 
+									 interesting factor that that Rice combo special and Pho sliced beef and beef ball are the 
+									 preferred food items among several customers.  
 
 								 </p>
-								 <p><a href="https://github.com/phuphan13/CaterMe-Restaurant-ERD-to-Neo4j">Github code >></a></p>
+								 
+								 <h4>Example of Jaccard similarity by sales channels</h4>
+								 <a href="../assets/images/projects/project2/prj2-custsim3.png" class="image main"><img src="../assets/images/projects/project2/prj2-custsim3.png" alt="" /></a><p></p>
+								 <a href="../assets/images/projects/project2/prj2-custsim4.png" class="image main"><img src="../assets/images/projects/project2/prj2-custsim4.png" alt="" /></a><p></p>
+								 <p>
+									The Jaccard coefficient indicates the majority of customers prefered to dine-in or
+									pick-up at the restaurant. There are two things need to be aware for the 
+									restaurant owner. 
+									First, the service at the counter need to be improved to serve more customers. Second, 
+									online order or food delivery are not really efficient? The restaurant owner probably needs to deep 
+									dive into the business to address these issues.
+								 </p>
+
+								 <p><a href="https://github.com/phuphan13/CaterMe-Restaurant-ERD-to-Neo4j" target="_blank">Github code >></a></p>
                             </section>
 					</div>
 

@@ -49,13 +49,43 @@
                             </header>
 
                             <!-- Text stuff -->
-                                <h3>Business Scenario:</h3>
+                                <h3>1. Business Scenario:</h3>
                                 <p>This project is a continuation of a case study of <a href="../projects/caterme_rdbms.html">Cater Me café</a>. As the business recently grows, there is a need to consider migrating its current relational database to a NoSQL database management platform that can provide better scalability for a big data environment. Specifically, graph database is chosen because of its flexibility and reliability for real-time sales data.</p>
-                                <h3>Graph database modelling:</h3>
-                                <p>In this stage, the existing ER diagram will be translated into graph structure. Each entity table in the relational model becomes node labels, each row or record becomes a node in the graph. Columns become node properties. A full guide of converting relational database to graph structure can be found in Neo4j website.
-						        <h3>Graph database implementation</h3>
-                             
-                                <p><a href="https://github.com/phuphan13/CaterMe-Restaurant-ERD-to-Neo4j">>> Github code </a></p>
+                                <h3>2. Graph database modelling:</h3>
+                                <p>The existing ER diagram will be converted into graph structure following the rules below. Full guidance on transforming a relational database to graph data model can be found in <a href="https://neo4j.com/developer/relational-to-graph-modeling/">Neo4j website</a>
+						       		<ul>
+										<li>Each entity table in relational model becomes node labels.</li>
+										<li>Each row or record of a table becomes a node in the graph.</li>
+										<li>Each column or field in a table becomes node properties.</li>
+										<li>Join tables (or associative entities) in relational model become relationships (arrow). </li>
+									</ul>
+								 <h4>Example of transforming a record of table Customers and Orders </h4>
+								 <a href="../assets/images/projects/project2/prj2-transform1.jpg" class="image main"><img src="../assets/images/projects/project2/prj2-transform1.jpg" alt="" /></a><p></p>
+								 <p>This image above illustrate the case of customer whose name is "McDonald Tom" with his order with ID "Ord0014". The arrow named "Purchased"
+								 represents the relationship between table Customers and Orders. </p> 
+								 <h4>Example of transforming all records related Customer "McDonald" and Order "Ord0014"</h4>
+								 <a href="../assets/images/projects/project2/prj2-transform2.jpg" class="image main"><img src="../assets/images/projects/project2/prj2-transform2.jpg" alt="" /></a><p></p>
+								 
+								 <h3>3. Graph database implementation</h3>
+								 Given the translated graph model above, <a href="https://neo4j.com/developer/cypher/">Cypher Query Language</a>
+								 is used to fully migrate the relational database into new Neo4j database. The relational database in this project
+								 is exported from the DBMS system Sqlite into csv files. 
+								 <h4>Example of Cypher script to import table Customers</h4>
+								 <a href="../assets/images/projects/project2/prj2-cypher1.png" class="image main"><img src="../assets/images/projects/project2/prj2-cypher1.png" alt="" /></a><p></p>
+								 <h4>Example of Cypher script to map Customers and Orders</h4>
+								 <a href="../assets/images/projects/project2/prj2-cypher2.png" class="image main"><img src="../assets/images/projects/project2/prj2-cypher2.png" alt="" /></a><p></p>
+								 <h4>Example of full implementation of the Graph database</h4>
+								 <a href="../assets/images/projects/project2/prj2-neo4j-graph.png" class="image main"><img src="../assets/images/projects/project2/prj2-neo4j-graph.png" alt="" /></a><p></p>
+								 <h3>4. Neo4j Graph Data Science Library (GDSL)</h3>
+								 <p>
+									The <a href="https://neo4j.com/docs/graph-data-science/2.3/algorithms/>">Neo4j GDSL</a>
+									support a wide ranges of data analytics, machine learning, graph algorithms etc. to improve prediction and discover insights.  
+								 </p>
+								 <p>
+									In this project, the restaurant owner
+
+								 </p>
+								 <p><a href="https://github.com/phuphan13/CaterMe-Restaurant-ERD-to-Neo4j">Github code >></a></p>
                             </section>
 					</div>
 

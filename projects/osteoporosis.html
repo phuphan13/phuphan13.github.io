@@ -67,30 +67,75 @@
                                 <h3>3. Methodology: </h3>
 								<h4>3.1 Data pre-processing</h4>
                                 
-								<p>Dataset is first checked for types, and missing values only appear for two features
+								<p>Dataset is first checked for data types, and missing values which are appear in two features
 									height and weight with the proportion of 2.3% and 1.7% respectively. K-Nearest Neighbors (or KNN) technique is used to 
 									impute those missing values 
 								</p>
 								<h5>Example of imputing missing data</h5>
 								<a href="../assets/images/projects/project3/missing1.png" class="image main"><img src="../assets/images/projects/project3/missing1.png" alt="" /></a><p></p>
 								<a href="../assets/images/projects/project3/missing2.png" class="image main"><img src="../assets/images/projects/project3/missing2.png" alt="" /></a>
-								<p>The next step is to create transform the response variable osteo.group from text to numerical 0, 1, 2 representing normal, osteopenia or osteoporosis. </p>
+								<p>The next step is to transform the response variable osteo.group from text to nominal initial-scale 0, 1, 2 representing for normal, osteopenia or osteoporosis. </p>
                                 
                                 <h4>3.2 Exploratory data analysis</h4>
-								<p>The EDA process utilizes the techniques of descriptive statistics to analyze the dataset with visual elements before the modelling task.</p>
-								<h5>Example of osteo groups </h5>
+								<p>The EDA process helps to explore the characteristics of the data including descriptive statistics,
+									distribution, outlier detection and correlation between the features.
+								</p>
+								<h5>Example of osteo groups frequency</h5>
 								<a href="../assets/images/projects/project3/osteo_grp.png" class="image main"><img src="../assets/images/projects/project3/osteo_grp.png" alt="" /></a><p></p>
 								<h5>Example of distribution shape of dataset features </h5>
 								<a href="../assets/images/projects/project3/distribution.png" class="image main"><img src="../assets/images/projects/project3/distribution.png" alt="" /></a>
 								<p>The histogram indicates all features appear to be approximately normal distribution except for the age feature which is right skewed. Osteo group is not in scope due to nominal variable.</p>
 								<h5>Example of outlier detection</h5>
 								<a href="../assets/images/projects/project3/outlier.png" class="image main"><img src="../assets/images/projects/project3/outlier.png" alt="" /></a><p></p>
+								<p></p>
 								<h4>3.3 Machine learning model</h4>
-								<p>In this project, to predict the possibility of being suffered from osteoporosis disease, which are multiple outcomes i.e. normal, osteopenia or osteoporosis, multinomial logistic regression and random forest algorithm are adopted</p>
-								<h4>3.4 Performance evaluation</h4>
-								<h3>4. Conclusion of findings:</h3>
+								<p>In this project, to predict the possibility of being suffered from osteoporosis disease, which are multiple outcomes i.e. normal, osteopenia or osteoporosis, therefore, multinomial logistic regression and random forest classifier are adopted.
+									Dataset is split into train and test with the ratio of 75% for train and 25% for test. 
+								</p>
+								<h4>Multinomial logistic regression</h4>
+								<p>
+									In this model, explanatory variables includes variables include “lean”, “fat”, “pcfat”, “age”, “height”, and “weight”, while the response variable is the encoding of osteo.group. 
+								</p>
+								<h5>Example of the predicted output using logistic regression</h5>
+								<a href="../assets/images/projects/project3/logreg_output1.png" class="image main"><img src="../assets/images/projects/project3/logreg_output1.png" alt="" /></a><p></p>
+								<p>
+									For example, the first row shows that the model predicts the possibility of 59% that this participant is suffering osteopenia, 36% is normal and very low possibility of suffering osteoporosis. 
+									Therefore, the model classifies this participant in the group of osteopenia (column osteo.group_predit). However, this participant is normal 
+									(column osteo.group_test) as in the test dataset, so in this case the model produces a bad outcome. 
+									The other outcomes seem to be consistent with test dataset.  
+
+								</p>
+								<p>The multinomial logistic regression model is also used to determine the impact of each 
+									explanatory variable on the odds ratio of the observed events of the disease. A Python package 
+								named statmodels is used to further assess these relationships. This demonstration can be found in the Github link below.</p>
+								<h5>Example of performance evaluation of logistic regression</h5>
+								<a href="../assets/images/projects/project3/logreg_per.png" class="image main"><img src="../assets/images/projects/project3/logreg_per.png" alt="" /></a><p></p>
 								
-                              
+								<h4>Random forest</h4>
+								<p>
+									Random forest classifier is another technique to a multi-class response variable. 
+									As for setting up the parameters, the number of trees in the forest is set to 50, 
+									and the function used to measure the split of which feature is entropy.
+
+								</p>
+								<h5>Example of predicted output using Random forest</h5>
+								<a href="../assets/images/projects/project3/randomf_output.png" class="image main maxwidth=10%"><img src="../assets/images/projects/project3/randomf_output.png" alt="" /></a><p></p>
+								
+								<h5>Example of performance evaluation of random forest</h5>
+								<a href="../assets/images/projects/project3/randomf_per.png" class="image main"><img src="../assets/images/projects/project3/randomf_per.png" alt="" /></a><p></p>
+								
+								<p></p>
+								<h3>4. Findings and Conclusion:</h3>
+								<p>Given the small dataset, both techniques suggests models with the overal accuracy
+									between 60% and 70% which are absolutely not a good predictor for all disease groups.
+									However, the precision and recall of these models for the osteopenia group are still greater than 
+									70% compared to the other groups.
+								</p>
+                               <p>
+								One reason causing low accuracy could be the high correlation between the explanatory variables.
+								This issue is also known as the multicollinearity  in regression. The next work is to experiment
+								 feature selection techniques that could help to improve the accuracy. 
+							   </p>
                                 <p><a href="https://github.com/phuphan13/Osteoporosis-using-Logistic-Reg-and-Random-Forest">>> Github code </a></p>
                             </section>
 					</div>

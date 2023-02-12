@@ -2700,7 +2700,7 @@ p.mainp {
 		display: flex;
 		cursor: default;
 		list-style: none;
-		margin-left: 45%;
+		margin-left: -1rem;
 		padding-left: 0;
 	}
 

@@ -4728,12 +4728,19 @@ p.mainp {
 	  .profile {
 		width:100%;
 		border-bottom: 1px solid;
+
 	  }
 	
 	  .profile img {
 		width:100%;
 		border-radius: 50%;
-		border:8px solid #f7f7f7;
+		/*border:8px solid #f7f7f7;*/
+		border: 0px solid #002333;
+	  }
+	
+	  .profile-image {
+		width: 100%;
+    	text-align: center;
 	  }
 
 

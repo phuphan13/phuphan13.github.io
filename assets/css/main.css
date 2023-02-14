@@ -3243,6 +3243,7 @@ p.mainp {
 		overflow: hidden;
 	}
 
+		/* tam thoi commment out de import cai background hinh vao
 		#wrapper > .bg {
 			position: absolute;
 			top: 0;
@@ -3257,6 +3258,7 @@ p.mainp {
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
+		*/
 
 			#wrapper > .bg.fixed {
 				position: fixed;

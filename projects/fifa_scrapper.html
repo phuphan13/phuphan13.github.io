@@ -51,7 +51,7 @@
                                    throughout the history. The world ranking can be found from the
                                    <a href="https://www.fifa.com/fifa-world-ranking/men" target="_blank">FIFA website.</a>
 
-                                   Unfortnately, there is no API to download this data so this project aims to scrap directly
+                                   Unfortunately, there is no API to download this data so this project aims to scrap directly
                                    from the website. This activity is simply for coding and visualizing practice, and not
                                    for any commercial purposes. 
                                 </p>
@@ -63,7 +63,7 @@
                                 <p>
                                     The ranking data for men national football teams was tracked from 31 Dec 1992 up to 
                                     the current date 22 Dec 2022. For each ranking period, the top 50 teams are shown in the 
-                                    first page, and the following 50 teams will be shown when user click on the next paginated page. There are about
+                                    first page, and the following 50 teams will be shown when users click on the next paginated page. There are about
                                     more than 200 teams for each ranking period. 
                                  </p>
                               
@@ -72,17 +72,17 @@
                                 <p></p>
                                 The URLs for current ranking pages follow the rules below:   
                                 <ul>
-                                    <li>22 Dec 2022: https://www.fifa.com/fifa-world-ranking/men?dateId=id13869</li>
-                                    <li>06 Oct 2022: https://www.fifa.com/fifa-world-ranking/men?dateId=id13792</li>
+                                    <li>22 Dec 2022: <a href="https://www.fifa.com/fifa-world-ranking/men?dateId=id13869" target="_blank">https://www.fifa.com/fifa-world-ranking/men?dateId=id13869</a></li>
+                                    <li>06 Oct 2022: <a href="https://www.fifa.com/fifa-world-ranking/men?dateId=id13792" target="_blank">https://www.fifa.com/fifa-world-ranking/men?dateId=id13792</a></li>
                                     <li>...</li>
-                                    <li>17 Jan 2007: https://www.fifa.com/fifa-world-ranking/men?dateId=id152 </li>
-                                    <li>18 Dec 2006: https://www.fifa.com/fifa-world-ranking/men?dateId=id151</li>
+                                    <li>17 Jan 2007: <a href="https://www.fifa.com/fifa-world-ranking/men?dateId=id152" target="_blank">https://www.fifa.com/fifa-world-ranking/men?dateId=id152 </a> </li>
+                                    <li>18 Dec 2006: <a href="https://www.fifa.com/fifa-world-ranking/men?dateId=id151" target="_blank">https://www.fifa.com/fifa-world-ranking/men?dateId=id151 </a></li>
                                     <li>...</li>
-                                    <li>31 Dec 1992: https://www.fifa.com/fifa-world-ranking/men?dateId=id1</li>
-                                </ul>
+                                    <li>31 Dec 1992: <a href="https://www.fifa.com/fifa-world-ranking/men?dateId=id1" target="_blank">https://www.fifa.com/fifa-world-ranking/men?dateId=id1</a></li>        
+                                </ul>                
                                 <p>
-                                    It is clearly see that the pattern for URLs is "https://www.fifa.com/fifa-world-ranking/men?dateId=" + the id number.
-                                    This number started from 1 to 152 at 17 Jan 2007, then these numbers are randomly picked up. There is no rule to 
+                                    It is clearly noticed that the pattern for URLs is "https://www.fifa.com/fifa-world-ranking/men?dateId=" + the id number.
+                                    The number started from 1 in 31 Dec 1992 to 152 in 17 Jan 2007, then it is randomly picked up. There is no rule to 
                                     format the id numbers from recent ranking periods. At the end of each page, there are links to the next ranking teams.
                                 </p>
 

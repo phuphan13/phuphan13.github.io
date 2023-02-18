@@ -99,8 +99,30 @@
                                         <li>For each ranking period, navigate for all paginated pages to get all teams' information</li>
                                         <li>Update into the main dataset</li>
                                     </ol>
-                                <h4>3.2 </h4>
-                                <h5>Example of scrapping dataset in csv</h5>
+                                <h4>3.2 Analysis of the HTML structure</h4>
+                                <p>The ranking periods with id numbers are setup in the JSON format (key value) and embedded in the script tag
+                                    with id of "__NEXT_DATA__". This can be done using webdriver (Selenium) find_element method with this id.</p>
+                             
+                                <h5>Example of script tag to store ranking periods </h5>
+                                <a href="../assets/images/projects/project5/ranking_periods.jpg" class="image main"><img src="../assets/images/projects/project5/ranking_periods.jpg" alt="" /></a><p></p>
+                                <p>Teams information can be retrieved from the HTML table row with class "row_rankingTableFullRow__Y_A4i". This can be 
+                                    done by using webdriver (Selenium) find_element method with this CSS selector.
+                                </p>
+                                <h5>Example of teams information in HTML</h5>
+                                <a href="../assets/images/projects/project5/team_table.jpg" class="image main"><img src="../assets/images/projects/project5/team_table.jpg" alt="" /></a>
+                                
+                                <p></p>
+                                <p>To navigate to other paginated pages within current rangking period, this project attempts to look up
+                                    a section near the bottom of the webpage. This can be done using the webdriver (Selenium) method find_element
+                                    but now with the XPATH parameter. The reason because this HTML div section is nested from other div tags 
+                                    and it is quite complicated to lookup by CSS or ID. The XPATH of this HTML div element can be retrieved easily 
+                                    in Chrome by right click the tag and copy. 
+                                </p>
+
+                                <h5>Example of paginated pages in HTML</h5>
+                                <a href="../assets/images/projects/project5/paginated_pages.jpg" class="image main"><img src="../assets/images/projects/project5/paginated_pages.jpg" alt="" /></a><p></p>
+                               
+                                <h5>Example of scraped dataset in csv</h5>
                                 <a href="../assets/images/projects/project5/dataset.jpg" class="image main"><img src="../assets/images/projects/project5/dataset.jpg" alt="" /></a>
                                 <p></p>
                                 <h3>4. Data Visualization:</h3>

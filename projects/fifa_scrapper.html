@@ -124,21 +124,29 @@
                                     in Chrome by right click the tag and copy. 
                                 </p>
 
-                                <h5>Example of paginated pages in HTML</h5>
+                                <h5>Example of paginated pages structure in HTML</h5>
                                 <a href="../assets/images/projects/project5/paginated_pages.jpg" class="image main"><img src="../assets/images/projects/project5/paginated_pages.jpg" alt="" /></a><p></p>
                                
-                                <h5>Example of scraped dataset in csv</h5>
+                                <h5>Example of scrapping dataset</h5>
                                 <a href="../assets/images/projects/project5/dataset.jpg" class="image main"><img src="../assets/images/projects/project5/dataset.jpg" alt="" /></a>
                                 <p></p>
 
                                 <h4>3.3 Scraping data with concurrency or multi-threading</h4>
                                 <p>
-                                    Basic scraping in Python is pretty easy and simple but it can be time-consuming. There are many ways to enable the scrapping data with concurrency, and this project suggests 
+                                    Basic scraping in Python is pretty easy and simple but it can be very time-consuming. There are many ways to enable the scrapping data with concurrency, and this project suggests 
                                     to use the custom class to create instances representing thread workers. 
                                 </p>
 
                                 <h3>4. Data Visualization</h3>
                                 <h4>4.1 Data preparation</h4>
+                                <p>Scrapping dataset is pretty much standard and clean except for the following minor issues:</p>
+                                <ul>
+                                        <li>The format of current ranking period for September is "DD Sept YYYY" which is different with other periods, that 
+                                            may cause the data importing issue in Power BI.
+                                        </li>
+                                        <li>The name for some countries should be standardized across the whole dataset. For example,
+                                            Côte d'Ivoire, Türkiye can be replaced by Ivory Coast and Turkey respectively. </li>
+                                </ul>
                                 
                                 <h5>Example of data relationship</h5>
                                 <a href="../assets/images/projects/project5/erd.jpg" class="image main"><img src="../assets/images/projects/project5/erd.jpg" alt="" /></a><p></p>
@@ -148,12 +156,14 @@
                                 <a href="../assets/images/projects/project5/federation.jpg" class="image main"><img src="../assets/images/projects/project5/federation.jpg" alt="" /></a><p></p>
                                 <h5>Example of country analysis</h5>
                                 <a href="../assets/images/projects/project5/country.jpg" class="image main"><img src="../assets/images/projects/project5/country.jpg" alt="" /></a><p></p>
-                                <h5>Example of rank table</h5>
+                                <h5>Example of full ranking table</h5>
                                 <a href="../assets/images/projects/project5/rank_table.jpg" class="image main"><img src="../assets/images/projects/project5/rank_table.jpg" alt="" /></a><p></p>
                                 
-                                <h5>Example of world ranking by bar chart race</h5>
-                                <p>To be updated.</p>
-                                <!--<p><a href="https://github.com/phuphan13/FIFA-web-scraping" target="_blank">>> Github repo </a></p>-->
+                                <h5>Example of best movers</h5>
+                                <a href="../assets/images/projects/project5/best_mover.jpg" class="image main"><img src="../assets/images/projects/project5/best_mover.jpg" alt="" /></a><p></p>
+                               
+                                <p>To be continued.</p>
+                                <p><a href="https://github.com/phuphan13/FIFA-web-scraping" target="_blank">>> Github repo </a></p>
                             </section>
                     </div>
 

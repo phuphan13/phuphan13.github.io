@@ -29,9 +29,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
-	line-height: 1;
-}
 
 ol, ul {
 	list-style: none;
@@ -98,21 +95,7 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background-color: #1e252d;
-		background-image: url('./assets/images/bg/bg.jpg');
-	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
 
 /* Type */
 
@@ -144,9 +127,6 @@ input, select, textarea {
 
 		}
 
-	body {
-		color: #212931;
-	}
 
 	body, input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
@@ -2249,7 +2229,6 @@ input, select, textarea {
 		}
 
 		form > .fields {
-			
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -2258,9 +2237,8 @@ input, select, textarea {
 			-webkit-flex-wrap: wrap;
 			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
-			width: calc(50% + 3rem);
+			width: calc(100% + 3rem);
 			margin: -1.5rem 0 2rem -1.5rem;
-			margin-left: 25%;
 		}
 
 			form > .fields > .field {
@@ -2637,20 +2615,9 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			/*margin: 4rem 0; original */
-			margin: auto;
-			width: 60%;
-			align-items: center;
+			margin: 4rem 0;
+			width: 100%;
 		}
-
-	    .image11.main {
-			display:block;
-			/*margin: 4rem 0; original */
-			margin: auto;
-			width: 80%;
-			align-items: center;
-		}
-		
 
 			.image.main:first-child {
 				margin-top: 0;
@@ -2660,10 +2627,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			.image11.main img{
-				width:100%;
-			}
-
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
@@ -2671,23 +2634,14 @@ input, select, textarea {
 			}
 
 			.image.main {
-				/*margin: 2rem 0; */
-				margin: auto
+				margin: 2rem 0;
 			}
-
-			.image11.main {
-				/*margin: 2rem 0; */
-				margin: auto
-			}
-
 
 		}
 
 	a.image {
 		overflow: hidden;
 	}
-
-	
 
 		a.image img {
 			-moz-transition: -moz-transform 0.2s ease-out;
@@ -2702,13 +2656,6 @@ input, select, textarea {
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 		}
-
-p.mainp {
-	text-align: center;
-	font-size:20px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
 
 /* Actions */
 
@@ -3261,7 +3208,6 @@ p.mainp {
 		overflow: hidden;
 	}
 
-		/* tam thoi commment out de import cai background hinh vao
 		#wrapper > .bg {
 			position: absolute;
 			top: 0;
@@ -3276,7 +3222,6 @@ p.mainp {
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
-		*/
 
 			#wrapper > .bg.fixed {
 				position: fixed;
@@ -3651,9 +3596,7 @@ p.mainp {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		
 		background: rgba(255, 255, 255, 0.175);
-
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3825,7 +3768,7 @@ p.mainp {
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 3rem;
+				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
@@ -4725,226 +4668,3 @@ p.mainp {
 		}
 
 	}
-
-
-	/*Resume*/
-
-	.main-content {
-		min-height:100vh;
-		width:100%;
-		margin: 4rem auto;
-		display:grid;
-		grid-template-columns: repeat(6,1fr);
-	  }
-	.left-section{
-		grid-column: span 2;
-		height:100%;
-		background-color: #f7f7f7;
-	
-	  }
-
-	  .left-content {
-		padding:1rem 2rem;
-	
-	  }
-
-	  .profile {
-		width:100%;
-		border-bottom: 1px solid;
-
-	  }
-	
-	  .profile img {
-		width:100%;
-		border-radius: 50%;
-		/*border:8px solid #f7f7f7;*/
-		border: 0px solid #002333;
-	  }
-	
-	  .profile-image {
-		width: 100%;
-    	text-align: center;
-	  }
-
-
-
-	  .right-section{
-		grid-column: span 4;
-		background-color: #f7f7f7;
-		height:100%;
-	  }
-
-	  .right-main-content {
-		padding:1.5rem 1.5rem;
-	  
-	  }
-	  
-	  .right-title {
-		position: relative;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-		color: #2f80ed;
-		padding-bottom: 1rem;
-	  
-	  }
-	  
-	  .para {
-		line-height: 1.5rem;
-		font-size: 15px;
-		/*color:#718096;*/
-	  }
-
-	  .para ul {
-		line-height: 1.5rem;
-		color:#718096;
-	  }
-
-	  
-
-	  .timeline{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	  }
-
-
-	  .tl-title{
-		letter-spacing: 1px;
-		font-size: 1.2rem;
-		color: #002333;
-		text-transform: uppercase;
-	  }
-	  
-	  .tl-content{
-		border-left: 1px solid #ccc;
-		padding-left: 2rem;
-		position: relative;
-		padding-bottom: 2rem;
-	  }
-
-	  .tl-title-2{
-		letter-spacing: 1px;
-		font-size: 1.0rem;
-		color: #2D9CDB;
-		
-	  }
-
-	  .tl-title-2::before{
-		content: "";
-		position: absolute;
-		width: .7rem;
-		height: .7rem;
-		background-color: #2D9CDB;
-		border-radius: 50%;
-		transform: translateX(-50%);
-		left: 0;
-	  }
-
-	  .sub-para{
-		color: #94D9EA;
-		padding: .4rem 0;
-	  }
-	  .skill-title{
-	   
-	
-		font-size: 1rem;
-		padding: .4rem 0;
-		font-weight: bold;
-	  }
-	  
-	  .subskill {
-	   font-size: 0.9rem;
-	  }
-
-	  .profile-name {
-		font-size: 1.5rem;
-		color:#002333;
-		text-align: center;
-		letter-spacing: 1px;
-		padding-bottom: 1.5rem 0;
-	   }
-	  
-	   .profile-career{
-		font-size: 1rem;
-		color:#002333;
-		text-align: center;
-		letter-spacing: 1px;
-		padding-bottom: 2rem 0;
-	   }
-
-	   .video-container{
-		position: relative;
-		width:100%;
-		padding-bottom: 56.25%;
-		height:0;
-	   }
-
-	   .video-container iframe {
-		position: absolute;
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
-	   }
-	  
-
-	/*Media Querries*/
-@media screen and (max-width:823px){
-	.right-title::after{
-		width: 40%;
-	}
-  }
-  @media screen and (max-width:681px){
-	.right-title::after{
-		width: 30%;
-	}
-  }
-  @media screen and (max-width:780px){
-	.timeline{
-		grid-template-columns: repeat(1, 1fr);
-	}
-  }
-  @media screen and (max-width:780px){
-	.left-section{
-		grid-column: span 3;
-	}
-	.right-section{
-		grid-column: span 4;
-	}
-  }
-  @media screen and (max-width:1200px){
-	.main-content{
-		grid-template-columns: repeat(1, 1fr);
-	}
-	.profile img{
-		width: 40%;
-	}
-  }
-  @media screen and (max-width:700px){
-	.profile img{
-		width: 60%;
-	}
-  
-	.project-img {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width:60%;
-  }
-  }
-  @media screen and (max-width:390px){
-	.name{
-		font-size: 1.5rem;
-	}
-  
-	.project-img {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width:80%;
-  }
-	.project-right-main-content{
-	  margin-left:0;
-	  margin-right:-3rem;
-	}
-  }
- 

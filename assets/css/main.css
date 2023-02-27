@@ -4802,6 +4802,9 @@ p.mainp {
 		line-height: 1.5rem;
 		font-size: 15px;
 		/*color:#718096;*/
+
+	
+
 	  }
 
 	  .para ul {
@@ -4819,7 +4822,7 @@ p.mainp {
 
 	  .tl-title{
 		letter-spacing: 1px;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		color: #002333;
 		text-transform: uppercase;
 	  }
@@ -4841,8 +4844,8 @@ p.mainp {
 	  .tl-title-2::before{
 		content: "";
 		position: absolute;
-		width: .7rem;
-		height: .7rem;
+		width: .5rem;
+		height: .5rem;
 		background-color: #2D9CDB;
 		border-radius: 50%;
 		transform: translateX(-50%);

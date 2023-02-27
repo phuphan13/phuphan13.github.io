@@ -4931,7 +4931,7 @@ p.mainp {
   }
   @media screen and (max-width:700px){
 	.profile img{
-		width: 60%;
+		width: 80%;
 	}
   
 	.project-img {

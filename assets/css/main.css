@@ -4926,7 +4926,7 @@ p.mainp {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.profile img{
-		width: 40%;
+		width: 60%;
 	}
   }
   @media screen and (max-width:700px){

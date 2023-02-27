@@ -181,6 +181,16 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
+	.p_profile {
+		text-align: justify;
+		margin: 0 0 1rem 0;
+	}
+	
+	.p_skill {
+		text-align: justify;
+		margin: 0 0 0.5rem 0;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
@@ -4755,7 +4765,7 @@ p.mainp {
 	  }
 	
 	  .profile img {
-		width:100%;
+		width:85%;
 		border-radius: 50%;
 		/*border:8px solid #f7f7f7;*/
 		border: 0px solid #002333;
@@ -4784,7 +4794,7 @@ p.mainp {
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		color: #2f80ed;
-		padding-bottom: 1rem;
+		/*padding-bottom: 1rem;*/
 	  
 	  }
 	  
@@ -4860,7 +4870,7 @@ p.mainp {
 		color:#002333;
 		text-align: center;
 		letter-spacing: 1px;
-		padding-bottom: 1.5rem 0;
+		padding-bottom: 1.5 rem 0;
 	   }
 	  
 	   .profile-career{
@@ -4868,7 +4878,7 @@ p.mainp {
 		color:#002333;
 		text-align: center;
 		letter-spacing: 1px;
-		padding-bottom: 2rem 0;
+		padding-bottom: 1 rem 0;
 	   }
 
 	   .video-container{

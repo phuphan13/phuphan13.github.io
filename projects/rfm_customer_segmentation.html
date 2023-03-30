@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Customer Segmentation using RFM Analysis</title>
+		<title>Customer analysis using RFM based segmentation</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -52,19 +52,19 @@
                                 <h3>1. Background</h3>
                                 <p>
                                 This project demonstrate how to perform customer analysis on a historical, transactional database using the RFM based segmentation. 
-                                A term RFM stands for Recency, Frequency and Monetary, which is a common marketing technique the marketers use to
+                                A term <b>RFM</b> stands <b>for Recency, Frequency and Monetary</b>, which is a common marketing technique the marketers use to
                                 identify their customers in various categories or clusters. This project utilizes Northwind database, the popular sample
                                 was originally created by Microsoft. Asuze Data Studio and Python are used to creating RFM metrics, analysis and visualization. 
                                 </p>
                                 <h3>2. Dataset introduction</h3>
                                 <p>
-                                    The Northwind database contains sales data for a company called Northwind Traders, which imports
+                                    The <b>Northwind</b> database contains sales data for a company called Northwind Traders, which imports
                                     and exports specialty foods around the world. This sample database was originally come with Microsoft
                                     Office suite, but Microsoft also shared the script to create a Northwind data sample in SQL Management tool, 
                                     which can be accessed via this <a href="https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs" target="_blank">link</a>.
 
                                     For RFM analysis, this project ultilizes the script to create a sample database and only use three main tables 
-                                    such as: Customers, Orders and Order Details.
+                                    such as: <b>Customers</b>, <b>Orders</b> and <b>Order Details</b>.
 
 									<h5>Example of Northwind Customer table</h5>
 									<a href="../assets/images/projects/project7/northwind_customer.jpg" class="image main"><img src="../assets/images/projects/project7/northwind_customer.jpg" alt="" /></a><p></p>
@@ -87,9 +87,9 @@
 									The three factors are defined as following:
 
 									<ul>
-										<li>Recency: how long (many day ago) a customer has purchased? 1 day ago, 14 days or 100 days ago?</li>
-										<li>Frequency: how often (many times) they purchased? It can be how many orders over a defined period </li>
-										<li>Monetary: how much the customer spent? It can be total sales from all transaction over a defined period</li>
+										<li><b>Recency:</b> how long (many day ago) a customer has purchased? 1 day ago, 14 days or 100 days ago?</li>
+										<li><b>Frequency:</b> how often (many times) they purchased? It can be how many orders over a defined period </li>
+										<li><b>Monetary:</b> how much the customer spent? It can be total sales from all transaction over a defined period</li>
 									</ul>
 								</p>
 								<h4>
@@ -120,20 +120,29 @@
 								</h4>
 								<p>
 									Given the scale of 3 tiers, total customer segments is 27 (or 3x3x3). Likewise, the case of 4 tiers results in 64 distinct 
-									segments (4x4x4). However, it is unnecessary to have 
+									segments (4x4x4). However, it is unnecessary to have so many segments , so marketers should assemble groups of customers and 
+									what segments most relevant to the business. Below is a list of customer segements that can be used. 
 									<ul>
-										<li>Best customers: who purchase most recently, often and spend most, FRM score 333 </li>
-										<li>Loyal customers: who not always spent the most, not quite often but always come back, FRM score 332, 232...</li>
-										<li>New customers: who has made initial purchases, either spend most or not, FRM score 313, 312, 311...</li>
+										<li><b>Best customers:</b> who purchase most recently, often and spend most, FRM score 333 </li>
+										<li><b>Loyal customers:</b> who not always spent the most, not quite often but always come back, FRM score 332, 232...</li>
+										<li><b>New customers:</b> who has made initial purchases, either spend most or not, FRM score 313, 312, 311...</li>
 										<li>...</li>
-										<li>Lost customers: who hasn't purchased in some time, FRM score 111, 112, 113...</li>
+										<li><B>Lost customers:</b> who hasn't purchased in some time, FRM score 111, 112, 113...</li>
 									</ul>
 								</p>
                                	<h3>4. Implementation:</h3>	
+								<p>
+									In this project, <b>Azure Data Studio</b> is used to connect to SQL Server, first executing the script to create database Northwind,
+									then creating FRM scores based on three tables Customers, Orders, and Order Details. Valuation date is set to 10 May 1998 but 
+									can be changed. Python package <b>pyodbc</b> is used to manage the SQL server connection and execute scripts, <b>plotly</b> is used for explanatory
+									analysis and data visualization.  
 								
+								</p>
 								
                                 <h3>5. Results and Conclusion:</h3>	
-							   
+							    <p>
+
+								</p>
                                 <p><a href="https://github.com/phuphan13/Customer-Segnmentation-using-FRM" target="_blank">>>Github repo</a></p>
                             </section>
 					</div>

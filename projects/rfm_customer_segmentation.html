@@ -136,7 +136,7 @@
 										<li><B>Lost customer:</b> who hasn't purchased in some time, FRM score 111, 112, 113...</li>
 									</ul>
 								</p>
-                               	<h3>4. Implementation:</h3>	
+                               	<h3>4. Implementation</h3>	
 								<p>
 									In this project, <b>Azure Data Studio</b> is used to connect to SQL Server, first executing the script to create sample database Northwind,
 									then creating FRM scores based on three tables Customers, Orders, and Order Details. Valuation date is set to 10 May 1998 but 
@@ -150,8 +150,37 @@
 							 
 								</p>
 								
-                                <h3>5. Results and Conclusion:</h3>	
-							    <p>
+                                <h3>5. Analysis of the results</h3>	
+								<h4>Recency vs. Monetary value</h4>
+								<p>Customers who recently purchased within 3 months or up to 100 days contributed the majority of total sales. However, most of their individual spendings are capped at $40,000 
+									and they are not new customers as well. There are five customers on the bottom right of the chart who purchased most recently but their total spending is roughly 33% of total sales. 
+								</p>
+									<a href="../assets/images/projects/project7/recency_vs_monetary.jpg" class="image main"><img src="../assets/images/projects/project7/recency_vs_monetary.jpg" alt="" /></a>
+							
+								<h4>Frequency vs. Monetary</h4>
+								<p>The scatter plot indicates that as the frequency of visits increases, the total sales generated also increases. Customers
+									in the segments of "Champion", "Loyalist", "Promising" drive higher sales compared to other segments.
+								</p>
+								<a href="../assets/images/projects/project7/frequency_vs_monetary.jpg" class="image main"><img src="../assets/images/projects/project7/frequency_vs_monetary.jpg" alt="" /></a>
+
+								<h4>Recency vs. Frequency</h4>
+						        <p>Customers with low frequency are mostly in the segments of "Lost Customers" and "At Risk", they are roughly 31% of total customers.
+								This scatter plot indicates that customers who visited recently are more likely to return compared to those who has visited long time ago, 
+							    and therefore higher frequency is mainly associated with recent visits. </p>
+								<a href="../assets/images/projects/project7/recency_vs_frequency.jpg" class="image main"><img src="../assets/images/projects/project7/recency_vs_frequency.jpg" alt="" /></a>
+
+								<h4>Total sales by segments</h4>
+								<p>The bar chart indicates that the top 3 segments of "Champion", "Loyal Customer", and "Promising" contributed roughly 83% of total sales ($1.12m vs $1.35m).
+                                 "At Risk" customers still generated high sales while the "Potential loyalist" and "New Customers" did not contribute as expected. 
+
+								</p>
+								<a href="../assets/images/projects/project7/sales_by_segment.jpg" class="image main"><img src="../assets/images/projects/project7/sales_by_segment.jpg" alt="" /></a><p>
+								Other visualizations such as tree map and geographic map of customer segments can also give some useful insights. These charts can be found in the github code below.
+								</p>
+
+								
+								<h3>6. Conclusion</h4>
+								<p>
 
 								</p>
                                 <p><a href="https://github.com/phuphan13/Customer-Segnmentation-using-FRM" target="_blank">>>Github repo</a></p>

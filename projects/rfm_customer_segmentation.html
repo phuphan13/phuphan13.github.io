@@ -111,9 +111,9 @@
 								</p>
 								<p>
 									The approach above divide the customer list into 3 tiers, it also can be divided into 4 tiers (quartile), or 5 tiers (quintile) or
-									percentile depending on the modelling requirements and business complexity. Another method to define the tiers is using 
-									the fixed ranges. For example, if someone purchased within 15 days, assign 3, more than 15 days but less than 40 days,
-									assign 2, and score 1 assign to the rest customers. Frequency and monetary can also be applied this method. 
+									percentile depending on the business complexity. Another method to define the tiers is using 
+									the fixed ranges. For example, if someone purchased within 15 days, assign score of 3, more than 15 days but less than 40 days,
+									assign 2, and score 1 assign to the rest customers. Frequency and monetary can also be applied using this approach. 
 								</p>
 								<h4>
 									3.3 Segmentation of RFM scores
@@ -133,7 +133,7 @@
 								</p>
                                	<h3>4. Implementation:</h3>	
 								<p>
-									In this project, <b>Azure Data Studio</b> is used to connect to SQL Server, first executing the script to create database Northwind,
+									In this project, <b>Azure Data Studio</b> is used to connect to SQL Server, first executing the script to create sample database Northwind,
 									then creating FRM scores based on three tables Customers, Orders, and Order Details. Valuation date is set to 10 May 1998 but 
 									can be changed. Python package <b>pyodbc</b> is used to manage the SQL server connection and execute scripts, <b>plotly</b> is used for explanatory
 									analysis and data visualization.  

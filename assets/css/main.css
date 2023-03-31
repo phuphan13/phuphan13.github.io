@@ -2637,6 +2637,13 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.fit1 {
+			display: block;
+			margin: auto;
+			width: 70%;
+		}
+
+		
 			.image.fit:first-child {
 				margin-top: 0;
 			}
@@ -2644,6 +2651,11 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+			.image.fit1 img {
+				width: 100%;
+			}
+
 
 		.image.main {
 			display: block;

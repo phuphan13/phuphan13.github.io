@@ -3544,7 +3544,7 @@ p.mainp {
 		@media screen and (max-width: 412px) {
 
 			#intro {
-				padding: 3rem 2rem 15rem 2rem ; 
+				padding: 3rem 2rem 20rem 2rem ; 
 				min-height: 100vh;
 			}
 

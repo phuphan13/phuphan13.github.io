@@ -3636,6 +3636,30 @@ p.mainp {
 
 		}
 
+		@media screen and (max-width: 920px) {
+
+			#intro {
+				padding: 3rem 2rem 16rem 2rem ;
+				min-height: 80vh;
+			}
+
+				#intro h1 {
+					font-size: 5rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 2rem;
+					margin-top: 0rem;
+				}
+
+				#intro .actions {
+					display: none;
+				}
+
+		}
+
 
 /* Header */
 

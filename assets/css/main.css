@@ -3507,76 +3507,32 @@ p.mainp {
 				opacity: 0;
 			}
 
-		@media screen and (max-width: 980px) {
+			@media screen and (max-width: 980px) {
 
-			#intro {
-				padding: 4rem 4rem 2rem 4rem ;
-				min-height: 90vh;
+				#intro {
+					padding: 4rem 4rem 2rem 4rem ;
+					min-height: 90vh;
+				}
+	
+					#intro p br {
+						display: none;
+					}
+	
+					#intro + #header {
+						margin-top: -14rem;
+					}
+	
 			}
-
-				#intro p br {
-					display: none;
-				}
-
-				#intro + #header {
-					margin-top: -14rem;
-				}
-
-		}
 
 		
 
-		@media screen and (max-width: 376px) {
-
-			#intro {
-				/*padding: 3rem 2rem 1rem 2rem ; tam thoi bỏ ra */
-				min-height: 80vh;
-			}
-
-				#intro h1 {
-					font-size: 3.25rem;
-					line-height: 1.1;
-					margin-bottom: 1rem;
-				}
-
-				#intro p {
-					font-size: 1rem;
-					margin-top: 0rem;
-				}
-
-				#intro .actions {
-					display: none;
-				}
-
-		}
-		@media screen and (max-width: 415px) {
-
-			#intro {
-				padding: 3rem 2rem 15rem 2rem ;
-				min-height: 80vh;
-			}
-
-				#intro h1 {
-					font-size: 3.25rem;
-					line-height: 1.1;
-					margin-bottom: 1rem;
-				}
-
-				#intro p {
-					font-size: 1rem;
-					margin-top: 0rem;
-				}
-
-				#intro .actions {
-					display: none;
-				}
-
-		}
+		
+		
 
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				/*padding: 3rem 2rem 1rem 2rem ; tam thoi bỏ ra */
+				padding: 3rem 2rem 1rem 2rem ; /*tam thoi bỏ ra */
 				min-height: 80vh;
 			}
 

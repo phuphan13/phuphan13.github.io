@@ -109,8 +109,7 @@
 									placed 6 orders and total sales is roughly 4,596$, the R/F/M scores are 2/1/2 respectively. First, the recency of 
 									all customers are sorted in ascending order, then the top 1/3 part of the list will be assigned 3 (highest score),
 									the next 1/3 part and the last 1/3 part will have 2 and 1 (lowest score) respectively. Frequency and Monetary are done 
-									using the same logic but in descending order. This is because the more frequent and larger sales will likely represent 
-									a loyal customer.
+									using the same logic but in descending order.
 								</p>
 								<p>
 									It also can be divided into 4 tiers (quartile), or 5 tiers (quintile) or percentile depending on the business complexity. 
@@ -135,10 +134,9 @@
 								</p>
                                	<h3>4. Implementation</h3>	
 								<p>
-									In this project, <b>Azure Data Studio</b> is used to connect to SQL Server, first executing the script to create sample database Northwind,
-									then creating FRM scores based on three tables Customers, Orders, and Order Details. Valuation date is set to 10 May 1998 but 
-									can be changed. Python package <b>pyodbc</b> is used to manage the SQL server connection and execute scripts, <b>plotly</b> is used for explanatory
-									analysis and data visualization.  
+									<b>Azure Data Studio</b> is used to create database Northwind, FRM metric and scores. 
+									Python package <b>pyodbc</b> is used to retrieve data from SQL Server, <b>plotly</b> is used for explanatory
+									analysis and data visualization. Python code can be found in github below.
 									
 									<h5>Example of creating the segment table</h5>
 									<a href="../assets/images/projects/project7/sql_create_segment.jpg" class="image main"><img src="../assets/images/projects/project7/sql_create_segment.jpg" alt="" /></a><p></p>
@@ -178,7 +176,10 @@
 								
 								<h3>6. Conclusion</h4>
 								<p>
-
+								RFM analysis is useful to understand customer behaviors, this method is quick, simple and can be applied for 
+								different type of businesses such as online, retail etc. However, this techniqua is a historical analysis not for prospects. 
+								Subjectively defining group of segments can be sensitive to the business and may lose potential customers. Machine learning method such as
+								<b>K-Means</b>, <b>DBSCAN</b> can be incorporated with RFM analysis to build an effective model.
 								</p>
                                 <p><a href="https://github.com/phuphan13/Customer-Segnmentation-using-FRM" target="_blank">>>Github repo</a></p>
                             </section>

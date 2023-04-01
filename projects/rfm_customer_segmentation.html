@@ -68,27 +68,25 @@
                                     Office suite, but Microsoft also shared the script to create a Northwind data sample in SQL Management tool, 
                                     which can be accessed via this <a href="https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs" target="_blank">link</a>.
 
-                                    For RFM analysis, this project ultilizes the script to create a sample database and only use three main tables 
-                                    such as: <b>Customers</b>, <b>Orders</b> and <b>Order Details</b>.
+                                    For RFM analysis, this project creates a sample database and use three main tables <b>Customers</b>, <b>Orders</b> and <b>Order Details</b>.
 
-									<h5>Example of Northwind Customer table</h5>
+									<h5>Example of Customers table</h5>
 									<a href="../assets/images/projects/project7/northwind_customer.jpg" class="image main"><img src="../assets/images/projects/project7/northwind_customer.jpg" alt="" /></a><p></p>
 									
-									<h5>Example of Northwind Orders table</h5>
+									<h5>Example of Orders table</h5>
 									<a href="../assets/images/projects/project7/northwind_orders.jpg" class="image main"><img src="../assets/images/projects/project7/northwind_orders.jpg" alt="" /></a><p></p>
 							
-									<h5>Example of Northwind Order Detail table</h5>
+									<h5>Example of Order Details table</h5>
 									<a href="../assets/images/projects/project7/northwind_orderdetail.jpg" class="image main"><img src="../assets/images/projects/project7/northwind_orderdetail.jpg" alt="" /></a>
 							
                                 </p>
                                 <h3>3. RFM Analysis</h3>
-								<h4>3.1 What is RFM Analysis</h4>
+								<h4>3.1 What is RFM</h4>
 								<p>
-									RFM (Recency, Frequency, Monetary) analysis is a marketing technique to explore the behavior based 
-									customer segmentation, in which this technique combines three different factors to rank each individual 
-									customer, and assign them into various segments. This can help the company in arranging appropriate
-									treaments for each group of customers, such as offering incentives for VIP customers, promotions for 
-									loyal customers, and separate plans for those who are at risk of being lost as they haven't purchased a long time ago. 
+									RFM is a marketing technique combining three different factors to rank each individual 
+									customer, and assign them into various groups. This helps the company in arranging appropriate
+									treaments for each segment, such as offering incentives for VIP customers, or action plans for 
+									those who are at risk of being lost as they haven't purchased a long time ago. 
 									The three factors are defined as following:
 
 									<ul>
@@ -101,8 +99,8 @@
 									3.2 Calculating RFM scores
 								</h4>
 								<p>Different businesses can define a scale of scores, for example, a score of 1 to 3 can be 
-								   assigned to each factor recency, frequency and monetary, in which 3 is the best/highest value and 1 is the 
-								   worst/lowest value for measurement. A final RFM score is calculated by combining three value of R/F/M above. 
+								   assigned to each factor R, F and M, in which 3 is the best/highest value and 1 is the 
+								   worst/lowest value for ranking. A final RFM score is a combination of R/F/M above. 
 								   <h5>Example of FRM scores table</h5>
 								   <a href="../assets/images/projects/project7/northwind_rfmscore.jpg" class="image main"><img src="../assets/images/projects/project7/northwind_rfmscore.jpg" alt="" /></a><p></p>
 								</p>
@@ -115,18 +113,17 @@
 									a loyal customer.
 								</p>
 								<p>
-									The approach above divide the customer list into 3 tiers, it also can be divided into 4 tiers (quartile), or 5 tiers (quintile) or
-									percentile depending on the business complexity. Another method to define the tiers is using 
-									the fixed ranges. For example, if someone purchased within 15 days, assign score of 3, more than 15 days but less than 40 days,
-									assign 2, and score 1 assign to the rest customers. Frequency and monetary can also be applied using this approach. 
+									It also can be divided into 4 tiers (quartile), or 5 tiers (quintile) or percentile depending on the business complexity. 
+									Another method to define the tiers is using fixed ranges. For example, if someone purchased within 15 days, assign score of 3, 
+									between 15 and 40 days, assign 2, and score 1 to the rest. Frequency and monetary can also be applied using this approach. 
 								</p>
 								<h4>
 									3.3 Segmentation of RFM scores
 								</h4>
 								<p>
-									Given the scale of 3 tiers, total customer segments is 27 (or 3x3x3). Likewise, the case of 4 tiers results in 64 distinct 
-									segments (4x4x4). However, it is unnecessary to have so many segments , so marketers should assemble groups of customers and 
-									what segments most relevant to the business. Below is a list of customer segements that can be used. 
+									Given 3 tiers, total segments is 27 (or 3x3x3). Likewise, the case of 4 tiers results in 64 distinct 
+									segments (4x4x4). However, it is unnecessary to have so many segments, so marketers should assemble segments that 
+									most relevant to the business. 
 									<ul>
 										<li><b>Champion:</b> who purchase most recently, often and spend most, FRM score 333, 332... </li>
 										<li><b>Loyal customer:</b> who not always spent the most, not quite often but always come back, FRM score 232...</li>
@@ -153,7 +150,7 @@
                                 <h3>5. Analysis of the results</h3>	
 								<h4>Recency vs. Monetary value</h4>
 								<p>Customers who recently purchased within 3 months or up to 100 days contributed the majority of total sales. However, most of their individual spendings are capped at $40,000 
-									and they are not new customers as well. There are five customers on the bottom right of the chart who purchased most recently but their total spending is roughly 33% of total sales. 
+									and they are not new customers as well. There are five customers on the bottom right who purchased most recently and total spending is roughly 33% of total sales. 
 								</p>
 									<a href="../assets/images/projects/project7/recency_vs_monetary.jpg" class="image main"><img src="../assets/images/projects/project7/recency_vs_monetary.jpg" alt="" /></a>
 							

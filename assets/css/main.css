@@ -3510,7 +3510,7 @@ p.mainp {
 		@media screen and (max-width: 980px) {
 
 			#intro {
-				/*padding: 4rem 4rem 2rem 4rem ; tam thoi bo ra */
+				padding: 4rem 4rem 2rem 4rem ;
 				min-height: 90vh;
 			}
 
@@ -3524,22 +3524,7 @@ p.mainp {
 
 		}
 
-		@media screen and (max-width: 1024px) {
-
-			#intro {
-				/*padding: 4rem 4rem 2rem 4rem ; tam thoi bo ra */
-				min-height: 90vh;
-			}
-
-				#intro p br {
-					display: none;
-				}
-
-				#intro + #header {
-					margin-top: -14rem;
-				}
-
-		}
+		
 
 		@media screen and (max-width: 376px) {
 
@@ -3612,54 +3597,8 @@ p.mainp {
 
 		}
 
-		@media screen and (max-width: 821px) {
-
-			#intro {
-				padding: 3rem 2rem 15rem 2rem ;
-				min-height: 80vh;
-			}
-
-				#intro h1 {
-					font-size: 5rem;
-					line-height: 1.1;
-					margin-bottom: 1rem;
-				}
-
-				#intro p {
-					font-size: 2rem;
-					margin-top: 0rem;
-				}
-
-				#intro .actions {
-					display: none;
-				}
-
-		}
-
-		@media screen and (max-width: 920px) {
-
-			#intro {
-				padding: 3rem 2rem 16rem 2rem ;
-				min-height: 80vh;
-			}
-
-				#intro h1 {
-					font-size: 5rem;
-					line-height: 1.1;
-					margin-bottom: 1rem;
-				}
-
-				#intro p {
-					font-size: 2rem;
-					margin-top: 0rem;
-				}
-
-				#intro .actions {
-					display: none;
-				}
-
-		}
-
+		
+	
 
 /* Header */
 

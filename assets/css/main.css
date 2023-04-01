@@ -3556,7 +3556,7 @@ p.mainp {
 		@media screen and (max-width: 376px) { /*for iphone 7 */
 
 			#intro {
-				padding: 3rem 2rem 4rem 2rem ; /*tam thoi bỏ ra */
+				padding: 3rem 2rem 5rem 2rem ; /*tam thoi bỏ ra */
 				min-height: 70vh;
 			}
 

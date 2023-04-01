@@ -3553,6 +3553,30 @@ p.mainp {
 
 		}
 
+		@media screen and (max-width: 376px) { /*for iphone 7 */
+
+			#intro {
+				padding: 3rem 2rem 4rem 2rem ; /*tam thoi bỏ ra */
+				min-height: 70vh;
+			}
+
+				#intro h1 {
+					font-size: 3.25rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 1rem;
+					margin-top: 0rem;
+				}
+
+				#intro .actions {
+					display: none;
+				}
+
+		}
+
 		
 	
 

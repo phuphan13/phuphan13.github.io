@@ -56,10 +56,9 @@
                             <!-- Text stuff -->
                                 <h3>1. Background</h3>
 								<p>
-                                This project demonstrates how to perform customer analysis on a historical, transactional database using the RFM based segmentation. 
+                                This project demonstrates a simple approach to perform customer analysis on a historical, transactional database using the RFM based segmentation. 
                                 <b>RFM</b> stands for <b>Recency, Frequency and Monetary</b>, which is one of the common techniques used in CRM to
-                                category customers into similar and different groups. This project utilizes Northwind database, the popular sample
-                                was originally created by Microsoft. Asuze Data Studio and Python are used to create RFM metrics, scores, analysis and visualization. 
+                                category customers into different groups. This project uses Northwind database, Azure Data Studio and Python are used to create RFM metrics, scores, analysis and visualization. 
                                 </p>
                                 <h3>2. Dataset introduction</h3>
                                 <p>
@@ -90,7 +89,7 @@
 									The three factors are defined as following:
 
 									<ul>
-										<li><b>Recency:</b> how long (many day ago) a customer has purchased? 1 day ago, 14 days or 100 days ago?</li>
+										<li><b>Recency:</b> how long (many day ago) a customer has recently purchased? 1 day ago or 14 days ago?</li>
 										<li><b>Frequency:</b> how often (many times) they purchased? It can be how many orders over a defined period </li>
 										<li><b>Monetary:</b> how much the customer spent? It can be total sales from all transaction over a defined period</li>
 									</ul>
@@ -105,9 +104,9 @@
 								   <a href="../assets/images/projects/project7/northwind_rfmscore.jpg" class="image main"><img src="../assets/images/projects/project7/northwind_rfmscore.jpg" alt="" /></a><p></p>
 								</p>
 								<p>
-									Given the valuation date of 10 May 1998, a customer with ID of "ALFKI" has purchase 31 days ago, this customer has
-									placed 6 orders and total sales is roughly 4,596$, the R/F/M scores are 2/1/2 respectively. First, the recency of 
-									all customers are sorted in ascending order, then the top 1/3 part of the list will be assigned 3 (highest score),
+									For example, given the valuation date 10/05/1998, customer "ALFKI" with last purchase about 31 days ago, total orders and sales are 
+									6 and $4,596, the R/F/M scores are 2/1/2 respectively. 
+									The recency (difference between the last purchase and valuation date) of all customers are calculated and sorted in ascending order, then the top 1/3 part of the list will be assigned 3 (highest score),
 									the next 1/3 part and the last 1/3 part will have 2 and 1 (lowest score) respectively. Frequency and Monetary are done 
 									using the same logic but in descending order.
 								</p>
@@ -170,16 +169,17 @@
 
 								</p>
 								<a href="../assets/images/projects/project7/sales_by_segment.jpg" class="image main"><img src="../assets/images/projects/project7/sales_by_segment.jpg" alt="" /></a><p>
-								Other visualizations such as tree map and geographic map of customer segments can also give some useful insights. These charts can be found in the github code below.
+								Other visualizations such as treemap and geographic map of customer segments can also give some useful insights. These charts can be found in the github Python code below.
 								</p>
 
 								
 								<h3>6. Conclusion</h4>
 								<p>
 								RFM analysis is useful to understand customer behaviors, this method is quick, simple and can be applied for 
-								different type of businesses such as online, retail etc. However, this techniqua is a historical analysis not for prospects. 
+								different type of businesses such as online, retail etc. However, this technique is a historical analysis and not for prospects. 
 								Subjectively defining group of segments can be sensitive to the business and may lose potential customers. Machine learning method such as
-								<b>K-Means</b>, <b>DBSCAN</b> can be incorporated with RFM analysis to build an effective model.
+								<b>K-Means</b>, <b>DBSCAN</b> together with feature scaling of R/F/M can be incorporated with RFM analysis to build an effective model. This enhancement will be implemented in 
+								another post. 
 								</p>
                                 <p><a href="https://github.com/phuphan13/Customer-Segnmentation-using-FRM" target="_blank">>>Github repo</a></p>
                             </section>

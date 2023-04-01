@@ -3541,11 +3541,34 @@ p.mainp {
 
 		}
 
-		@media screen and (max-width: 412px) {
+		@media screen and (max-width: 376px) {
 
 			#intro {
-				padding: 3rem 2rem 25rem 2rem ; 
-				min-height: 100vh;
+				/*padding: 3rem 2rem 1rem 2rem ; tam thoi bỏ ra */
+				min-height: 80vh;
+			}
+
+				#intro h1 {
+					font-size: 3.25rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 1rem;
+					margin-top: 0rem;
+				}
+
+				#intro .actions {
+					display: none;
+				}
+
+		}
+		@media screen and (max-width: 415px) {
+
+			#intro {
+				padding: 3rem 2rem 15rem 2rem ;
+				min-height: 80vh;
 			}
 
 				#intro h1 {
@@ -3588,6 +3611,31 @@ p.mainp {
 				}
 
 		}
+
+		@media screen and (max-width: 821px) {
+
+			#intro {
+				padding: 3rem 2rem 15rem 2rem ;
+				min-height: 80vh;
+			}
+
+				#intro h1 {
+					font-size: 5rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 2rem;
+					margin-top: 0rem;
+				}
+
+				#intro .actions {
+					display: none;
+				}
+
+		}
+
 
 /* Header */
 

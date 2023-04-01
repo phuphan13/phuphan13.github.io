@@ -3556,6 +3556,12 @@ p.mainp {
 					display: none;
 				}
 
+				.image.main {
+					/*margin: 2rem 0; */
+					margin: auto;
+					width:100%
+				}
+
 		}
 
 		@media screen and (max-width: 376px) { /*for iphone 7 */

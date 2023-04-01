@@ -3580,6 +3580,12 @@ p.mainp {
 					display: none;
 				}
 
+				.image.main {
+					/*margin: 2rem 0; */
+					margin: auto;
+					width:100%
+				}
+
 		}
 
 		

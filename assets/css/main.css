@@ -3532,7 +3532,7 @@ p.mainp {
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				padding: 3rem 2rem 1rem 2rem ; /*tam thoi bỏ ra */
+				padding: 3rem 2rem 5rem 2rem ; /*tam thoi bỏ ra */
 				min-height: 80vh;
 			}
 

@@ -3510,7 +3510,7 @@ p.mainp {
 		@media screen and (max-width: 980px) {
 
 			#intro {
-				padding: 4rem 4rem 2rem 4rem ;
+				/*padding: 4rem 4rem 2rem 4rem ; tam thoi bo ra */
 				min-height: 90vh;
 			}
 
@@ -3527,7 +3527,7 @@ p.mainp {
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				padding: 3rem 2rem 1rem 2rem ;
+				/*padding: 3rem 2rem 1rem 2rem ; tam thoi bỏ ra */
 				min-height: 80vh;
 			}
 

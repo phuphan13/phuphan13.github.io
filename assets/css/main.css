@@ -3510,12 +3510,16 @@ p.mainp {
 			@media screen and (max-width: 980px) {
 
 				#intro {
-					padding: 4rem 4rem 10rem 4rem ;
+					padding: 4rem 4rem 15rem 4rem ;
 					min-height: 90vh;
 				}
 	
 					#intro p br {
 						display: none;
+					}
+					#intro p {
+						font-size: 2rem;
+						margin-top: 0rem;
 					}
 	
 					#intro + #header {

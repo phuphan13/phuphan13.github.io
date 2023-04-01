@@ -3541,6 +3541,30 @@ p.mainp {
 
 		}
 
+		@media screen and (max-width: 412px) {
+
+			#intro {
+				padding: 3rem 2rem 15rem 2rem ; 
+				min-height: 100vh;
+			}
+
+				#intro h1 {
+					font-size: 3.25rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 1rem;
+					margin-top: 0rem;
+				}
+
+				#intro .actions {
+					display: none;
+				}
+
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#intro {

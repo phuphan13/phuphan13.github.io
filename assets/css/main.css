@@ -2607,6 +2607,17 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.image11 {
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+	.image12 {
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
 		.image img {
 			display: block;
 		}
@@ -2672,11 +2683,18 @@ input, select, textarea {
 			width: 80%;
 			align-items: center;
 		}
-		
+		.image12.main {
+			display:block;
+			/*margin: 4rem 0; original */
+			margin: auto;
+			width: 60%;
+			align-items: center;
+		}
 
 			.image.main:first-child {
 				margin-top: 0;
 			}
+		
 
 			.image.main img {
 				width: 100%;
@@ -2711,7 +2729,6 @@ input, select, textarea {
 	}
 
 	
-
 		a.image img {
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
@@ -2725,6 +2742,45 @@ input, select, textarea {
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 		}
+
+		/*phu them vao */
+		a.image11 {
+			overflow: hidden;
+		}
+	
+		
+			a.image11 img {
+				-moz-transition: -moz-transform 0.2s ease-out;
+				-webkit-transition: -webkit-transform 0.2s ease-out;
+				-ms-transition: -ms-transform 0.2s ease-out;
+				transition: transform 0.2s ease-out;
+			}
+	
+			a.image11:hover img {
+				-moz-transform: scale(1.05);
+				-webkit-transform: scale(1.05);
+				-ms-transform: scale(1.05);
+				transform: scale(1.05);
+			}
+
+			a.image12 {
+				overflow: hidden;
+			}
+		
+			
+				a.image12 img {
+					-moz-transition: -moz-transform 0.2s ease-out;
+					-webkit-transition: -webkit-transform 0.2s ease-out;
+					-ms-transition: -ms-transform 0.2s ease-out;
+					transition: transform 0.2s ease-out;
+				}
+		
+				a.image12:hover img {
+					-moz-transform: scale(1.05);
+					-webkit-transform: scale(1.05);
+					-ms-transform: scale(1.05);
+					transform: scale(1.05);
+				}
 
 p.mainp {
 	text-align: center;

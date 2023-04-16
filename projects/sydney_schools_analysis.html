@@ -91,10 +91,49 @@
                             <h5>Example of pre-processed school dataset</h5>
                             <a href="../assets/images/projects/project8/dataset.jpg" class="image11 main"><img src="../assets/images/projects/project8/dataset.jpg" alt="" /></a><p></p>
                           
-                            <h3>4. Explanatory Data Analysis </h3>
-                            <h3>5. Visualization</h3>
+                            <h3>4. Explanatory Data Analysis and Visualization</h3>
+                            <p>In this section, I try to answer the most concerning questions regarding the selecting a right school. Various analyses of the school data, ranking facros including State Overall Score, 2022 NAPLAN etc. can be found in the Github link below. <b>Plotly</b> Python library is used to mark bar charts, histograms and the scatter plots.</p>
+                            <p><b>4.1 Is that students who come from schools with more social-educational advantage, the more likely that they do better at school?</b> </p>
+                            <p>The figures below show the correlation between published 2022 ICSEA and student performance through the NAPLAN Year 5 and Year 9 Average score, respectively. The R2 (0.235) in Figure 1 suggests a weak relationship between these two factors, while in Figure 2, R2 (0.454) is a moderate correlation. In both cases, the p-values for the coefficient are less than 5%. In other words, it is not very strong to conclude that schools with high ICSEA scores, their students are more likely to outperform compared with the lower ones.</p>
+                            <a href="../assets/images/projects/project8/Figure 1.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 1.jpg" alt="" /></a><p></p>
+                            <a href="../assets/images/projects/project8/Figure 2.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 2.jpg" alt="" /></a><p></p>
+                        
+                        
+                            <h4>4.2 Public schools do as well as private schools?</h4>
+                            <p>Figure below shows the NAPLAN Year 5 and Year 9 Average across the quartile range of ICSEA values, which is from 939 to 1,273. For primary, Independent (or private) schools seems to outperform both Government and Catholic schools for across the quartiles but not so much significant. For secondary, starting from the last two quartiles of ICSEA, Government schools are significantly above Independent schools, and no Catholic schools in this ICSEA range. So, the often-presumed superiority of high-fee private institutions over public schools is it a myth?</p>
+                            <a href="../assets/images/projects/project8/Figure 3.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 3.jpg" alt="" /></a><p></p>
+                         
+                            <h4>4.3 LBOTE students are outperforming their native English speaker peers in NAPLAN?</h4>
+                            <p>Figure 5 shows that there is no significant difference between the schools with more or less proportion of LBOTE background. One interesting thing is there are only 14 primary schools in the sample having LBOTE less than 10%. Figure 6 has a similar situation except for several schools with high LBOTE achieving top NAPLAN score. As we know, the LBOTE community is pretty diverse, and more talents come from many backgrounds and countries. </p>
+                            <a href="../assets/images/projects/project8/Figure 4.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 4.jpg" alt="" /></a><p></p>
+                            <a href="../assets/images/projects/project8/Figure 5.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 5.jpg" alt="" /></a><p></p>
+                        
+
+
+                            <h3>5. Heatmaps and interactive shareable marker map</h3>
+                            <p>In this part, I used Python <b>Folium</b> library to create heatmaps for top schools ranked with State Overall Score, 2022 NAPLAN Average and School ICSEA. 
+                            These screenshots below are the heatmaps of schools using the ranking of 2022 NAPLAN Average.</p>
+                            <h5>Heatmap of top performing primary schools</h5>
+                            <a href="../assets/images/projects/project8/Figure 6.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 6.jpg" alt="" /></a><p></p>
+                            <h5>Heatmap of top performing secondary schools</h5>
+                            <a href="../assets/images/projects/project8/Figure 7.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 7.jpg" alt="" /></a><p></p>
+                            <h5>Interactive shareable marker map</h5>
+                            <p>I used <b>Streamlit</b> to publish the marker map (also created by Folium) into a shareable webpage which can be accessed from this  <a href="https://locating-sydney-school-map.streamlit.app/" target="_blank">link</a>
+                            From this ad-hoc page, users can provide several options for searching schools and the map will show all the schools meet these criteria togher with some insights of suburb characteristics.
+                            </p>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xavHp4DO_jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <p></p>
+                        
                             <h3>6. Conclusion</h3>
-                            
+            
+                            <p>
+                                Finding the right school for children is challenging, but thankfully, there are many reliable sources for parents to consider. 
+                                In my opinion, if you are on the fence of making this decision for your child’s education, I would suggest taking a look at other factors rather than sole relying on NAPLAN scores or other assessment tool mentioned above</p>
+                                <p>There are many things we need to keep our eyes on, such as school location, how it is close to where your family lives and public transport, how you commute to your workplace if you live in the school catchment zone, and whether is it safe for your kids to walk home alone if you cannot pick them up. This is simply to visit a school, speak to the teachers, book a tour, or join school open days. Looking around the community and culture of the school suburb. I hope this small piece of work can help my friend to find the right school for his little ones. 
+
+                            </p>
                             <p></p>
                             <p><a href="https://github.com/phuphan13/Analysis-of-Sydney-top-performing-schools" target="_blank">>>Github repo</a></p>
                             </section>

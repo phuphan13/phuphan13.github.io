@@ -66,14 +66,14 @@
                             <p>I created this project to help one of my ex-Uni friends in choosing a suitable school in Sydney for his children. 
                                This project first scraps and collects school data from various webpages and open data sources in Sydney. Then I do 
                                various analyses regarding school ranking factors. Lastly, I created heatmaps for top performing schools and an interactive marker map 
-                               which can help to locate schools online.   
+                               which can help to locate schools and catchment areas online.   
                             </p>
                             <h3>2. Dataset introduction</h3>
                             <p>Data sources used in this project include:</p>
                             <ul>
                                 <li><b>List of schools and State overall scores</b>: Better Education Pty Ltd.</li>
                                 <li><b>NAPLAN score, School ICSEA, LBOTE, School profile and geographic locations</b>: Australian Curriculum, Assessment and Reporting Authority (ACARA).</li>
-                                <li><b>List of selective schools, opportunity classes</b>: NSW Data Hub</li>
+                                <li><b>List of selective schools, opportunity classes, school catchment areas</b>: NSW Data Hub</li>
                                 <li><b>Sydney Suburb characteristics</b>: Sydney Suburb Review</li>
                             </ul>  
                             <p>This project is subject to being bound by the terms and copyright statements to use the data sources from the organization and associations listed above. This derivative work is for personal, non-commercial education and information purposes only. Before relying on the figure in any important matter, users should carefully evaluate the source, accuracy, completeness, and relevance of the information. </p>
@@ -91,13 +91,13 @@
                             <h5>Screenshot of 2022 Year 5 NAPLAN Average scores by schools</h5>
                             <a href="../assets/images/projects/project8/2022_NAPLAN_Yr5.jpg" class="image11 main"><img src="../assets/images/projects/project8/2022_NAPLAN_Yr5.jpg" alt="" /></a><p></p>
                             <h4>3.2 Data cleaning and feature engineering</h4>
-                            <p>In this part, this project first to combine primary schools and secondary schools in to 1 dataset, then merge with NAPLAN Scores, ICSEA index, LBOTE percentage
+                            <p>In this part, this project first to combine primary schools and secondary schools in to one dataset, then merge with NAPLAN Scores, ICSEA index, LBOTE percentage
                             , selective schools, opportunity classes and geographic locations (latitude and longitude). For any school missing location, I used <b>Geocoder/Geopy</b> library to impute longitude and latitude on each given school name.
                             </p>
                             <h5>Example of pre-processed school dataset</h5>
                             <a href="../assets/images/projects/project8/dataset.jpg" class="image11 main"><img src="../assets/images/projects/project8/dataset.jpg" alt="" /></a><p></p>
                           
-                            <h3>4. Explanatory Data Analysis and Visualization</h3>
+                            <h3>4. Exploratory Data Analysis and Visualization</h3>
                             <p>In this section, I try to answer the most concerning questions regarding the selecting a right school. Various analyses of the school data, ranking facros including State Overall Score, 2022 NAPLAN etc. can be found in the Github link below. <b>Plotly</b> Python library is used to mark bar charts, histograms and the scatter plots.</p>
                             <p><b>4.1 Is that students who come from schools with more social-educational advantage, the more likely that they do better at school?</b> </p>
                             <p>The figures below show the correlation between published 2022 ICSEA and student performance through the NAPLAN Year 5 and Year 9 Average score, respectively. The R2 (0.235) in Figure 1 suggests a weak relationship between these two factors, while in Figure 2, R2 (0.454) is a moderate correlation. In both cases, the p-values for the coefficient are less than 5%. In other words, it is not very strong to conclude that schools with high ICSEA scores, their students are more likely to outperform compared with the lower ones.</p>
@@ -113,12 +113,25 @@
                             <p>Figure 5 shows that there is no significant difference between the schools with more or less proportion of LBOTE background. One interesting thing is there are only 14 primary schools in the sample having LBOTE less than 10%. Figure 6 has a similar situation except for several schools with high LBOTE achieving top NAPLAN score. As we know, the LBOTE community is pretty diverse, and more talents come from many backgrounds and countries. </p>
                             <a href="../assets/images/projects/project8/Figure 4.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 4.jpg" alt="" /></a><p></p>
                             <a href="../assets/images/projects/project8/Figure 5.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 5.jpg" alt="" /></a><p></p>
-                        
-
+                            <h4>4.4 2022 NAPLAN Average scores breakdown by test</h4>
+                            <p>Screeshots below demonstrate the 2022 NAPLAN Year 5 and Year breakdown by five tests mentioned above. For primary schools, all tests seem to have
+                                the same distribution shape, but for secondary reading and writing are close to the standard distribution except for the several outstanding observations 
+                                on the right side. 
+                            
+                            </p>
+                            
+                            <h5>Screenshot of 2022 NAPLAN Year 5 breakdown by test</h5>
+                            <a href="../assets/images/projects/project8/naplan_breakdown_primary.jpg" class="image11 main"><img src="../assets/images/projects/project8/naplan_breakdown_primary.jpg" alt="" /></a><p></p>
+                            <h5>Screenshot of 2022 NAPLAN Year 9 breakdown by test</h5>
+                            <a href="../assets/images/projects/project8/naplan_breakdown_secondary.jpg" class="image11 main"><img src="../assets/images/projects/project8/naplan_breakdown_secondary.jpg" alt="" /></a><p></p>
+                            <h5>Screenshot of 2022 NAPLAN breakdown of Sydney versus country scale</h5>
+                            <p>Sydney top performing schools (State Overall Score from 90 to 100 points) seems to outperform country average score for all the tests. </p>
+                            <a href="../assets/images/projects/project8/naplan_vs_country.jpg" class="image11 main"><img src="../assets/images/projects/project8/naplan_vs_country.jpg" alt="" /></a><p></p>
+                      
 
                             <h3>5. Heatmaps and interactive shareable marker map</h3>
                             <p>In this part, I used Python <b>Folium</b> library to create heatmaps for top schools ranked with State Overall Score, 2022 NAPLAN Average and School ICSEA. 
-                            These screenshots below are the heatmaps of schools using the ranking of 2022 NAPLAN Average.</p>
+                            These screenshots below represent the heatmaps of schools using the ranking of 2022 NAPLAN Average.</p>
                             <h5>Heatmap of top performing primary schools</h5>
                             <a href="../assets/images/projects/project8/Figure 6.jpg" class="image11 main"><img src="../assets/images/projects/project8/Figure 6.jpg" alt="" /></a><p></p>
                             <h5>Heatmap of top performing secondary schools</h5>
@@ -127,7 +140,8 @@
                             <a href="../assets/images/projects/project8/banner.png" class="image11 main"><img src="../assets/images/projects/project8/banner.png" alt="" /></a><p></p>
                             
                             <p>I used <b>Streamlit</b> to publish the marker map (also created by Folium) into a shareable webpage which can be accessed from this  <a href="https://locating-sydney-school-map.streamlit.app/" target="_blank">link</a>
-                            From this ad-hoc page, users can provide several options for searching schools and the map will show all the schools meet these criteria togher with some insights of suburb characteristics.
+                            .From this page, users can provide several options for searching schools and the map will show all the schools meet these criteria togher with some insights of suburb characteristics. This tool can also 
+                            check your address whether it is within school catchment zone. 
                             </p>
                             <div class="video-container">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/KgNeeO6PQG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
